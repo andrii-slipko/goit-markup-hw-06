@@ -12,7 +12,7 @@ ul {
 .header {
     background-color: #E7E9FC;
 }
-.nav-link-studio {
+.nav-link {
 font-size: 16px;
 font-weight: 500;
 line-height: 24px;
@@ -20,32 +20,10 @@ letter-spacing: 0.02em;
 text-align: left;
 color: #2E2F42;
 }
-.nav-link-portfolio {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: #2E2F42;
-    }
-.nav-link-contacts {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: 0.02em;
-        text-align: left;
-        color: #2E2F42;
-        }
-.nav-link-studio:hover {
+.nav-link:hover {
     color: #404BBF
 }
-.nav-link-portfolio:hover {
-    color: #404BBF
-}
-.nav-link-contacts:hover {
-    color: #404BBF
-}
-.nav-link-studio:focus {
+.nav-link:focus {
     color:  #404bbf
 }
 .adress-box {
@@ -82,14 +60,6 @@ text-align: center;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    width: Hug (169px)px;
-height: Hug (56px)px;
-top: 428px;
-left: 636px;
-padding: 16px 32px 16px 32px;
-gap: 10px;
-border-radius: 4px 0px 0px 0px;
-opacity: 0px;
 background-color: #4D5AE5;
 color: #FFFFFF;
 cursor: pointer;
@@ -103,7 +73,7 @@ cursor: pointer;
 .advantages-main-title {
     visibility: hidden;
 }
-.advantages-title {
+.advantages-title-name {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -111,12 +81,12 @@ cursor: pointer;
     text-align: left;
     color: #2e2f42 ;
 }
-.advantages-text {
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-text-align: left;
-color: #434455;
+.advantages-text-descr {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #434455;
 }
 .team-box {
     background-color: #F4F4FD;
