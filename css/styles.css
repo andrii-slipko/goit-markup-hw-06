@@ -124,7 +124,17 @@ border-radius: 4px;
     padding: 120px 0;
 }
 .visually-hidden {
-    display: none;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
 }
 .advantages-title-name {
     font-size: 20px;
@@ -139,14 +149,10 @@ border-radius: 4px;
     display: flex;
     flex-direction: row;
     gap: 24px;
-    justify-content: center;
-    padding-left: 156px;
-    padding-top: 120px;
-    padding-right: 156px;
-    padding-bottom: 120px;
+
 }
 .adv-list-item {
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - 72px) / 4)
 
 }
 .advantages-text-descr {
@@ -297,6 +303,7 @@ letter-spacing: 0.03em;
 text-align: left;
 color: #4D5AE5;
 text-transform: uppercase;
+margin-right: 76px;
 }
 .header-logo-end {
     font-family: "Raleway", sans-serif;
@@ -307,5 +314,4 @@ letter-spacing: 0.03em;
 text-align: left;
 color: #2E2F42;
 text-transform: uppercase;
-margin-right: 76px;
 }
