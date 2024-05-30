@@ -330,3 +330,8 @@ color: #FFFFFF;
     height: 40px;
     border-radius: 50;
 }
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: #F4F4FD;
+}
