@@ -28,6 +28,7 @@ img {
     padding-bottom: 24px;
     gap: 332px;
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
     display: flex;
@@ -55,6 +56,22 @@ text-align: left;
 color: #2E2F42;
 padding: 24px 0;
 
+}
+.stud {
+    color: #404bbf;
+    position: relative;
+
+}
+.stud::after {
+    content: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover {
     color: #404BBF
@@ -90,6 +107,9 @@ color: #434455
     padding: 188px 0;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1-min.jpg);
 max-width: 1440px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
 }
 .main-title {
     color: #FFFFFF;
@@ -114,6 +134,7 @@ min-width: 169px;
 height: 56px;
 border: none;
 border-radius: 4px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-button:hover {
     background-color:  #404BBF;
@@ -187,6 +208,7 @@ margin-bottom: 72px;
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-list-item-cont {
     padding: 32px 0;
@@ -234,11 +256,35 @@ margin-bottom: 72px;
 }
 .portfolio-list-item {
     width: calc((100% - 48px) / 3); 
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-list-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+    transform: translateY(0%);
 }
 .portfolio-list-item-cont {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+}
+.portf-list-img {
+    position: relative;position: relative;
+    overflow: hidden;
+
+}
+.portf-list-p {
+    position: absolute;
+    top: 0; 
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px; 
+    background-color: #4d5ae5;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .service {
 font-size: 20px;
@@ -323,21 +369,22 @@ line-height: 24px;
 letter-spacing: 0.02em;
 text-align: left;
 color: #FFFFFF;
+margin-bottom: 16px;
 }
 .sm-icon {
-    background-color: #4D5AE5;
+
     width: 40px;
     height: 40px;
     border-radius: 50px;
-    text-align: center center;
+
 }
-.sm-icon:hover {
-    background-color: #404BBF;
-}
+
+
 .sm-list {
     display: flex;
     flex-direction: row;
     gap: 16px;
+    justify-content: center;
 }
 .adv-box {
     background-color: #F4F4FD;
@@ -345,15 +392,59 @@ color: #FFFFFF;
     width: 264px;
 height: 112px;
 border-radius: 4px;
-text-align: center center;
+display: flex;
+align-items: center; 
+justify-content: center;
+margin-bottom: 8px;
 }
 .sm-icon-footer {
-    background-color: #4D5AE5;
     width: 40px;
     height: 40px;
-    border-radius: 50px;
-    text-align: center center;
+  
 }
-.sm-icon-footer:hover {
-    background-color: #31D0AA
+
+.sm-icon-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+}
+.sm-icon-link:hover {
+    background-color: #404bbf;
+}
+.sm-icon-link:focus {
+    background-color: #404bbf;
+}
+.sm-icon-logo {
+    fill: #f4f4fd;
+}
+.footer-cont {
+    display: flex;
+    align-items: baseline;
+
+}
+.logo-footer-box {
+    margin-right: 120px
+}
+.sm-icon-footer-link {
+    width: 100%;
+    height: 100%;
+    background-color:#4d5ae5;
+    border-radius: 50%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.sm-icon-footer-link:hover {
+    background-color: #31d0aa;
+}
+.sm-icon-footer-link:focus {
+    background-color: #31d0aa;
+}
+.sm-footer-logo {
+    fill: #f4f4fd;
 }
