@@ -262,6 +262,9 @@ margin-bottom: 72px;
 }
 .portfolio-list-item:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+    
+}
+.portfolio-list-item:hover .portf-list-p {
     transform: translateY(0%);
 }
 .portfolio-list-item-cont {
@@ -455,4 +458,10 @@ margin-bottom: 8px;
 }
 .sm-footer-logo {
     fill: #f4f4fd;
+}
+.sm-list-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
 }
