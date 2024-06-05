@@ -301,7 +301,7 @@
             </li>
         </ul>
     </div>
-        <div class="backdrop">
+        <div class="backdrop is-open">
             <div class="modal">
                 <button type="button" class="modal-close">
                    <svg class="close-x" width="8" height="8"> <use href="./images/icons.svg#icon-Vector"></use> </svg>
@@ -310,18 +310,27 @@
                     Leave your contacts and we will call you back
                 </p>
                 <form class="modal-form">
+                   <div class="input-box">
                     <label class="modal-input-label">
                         Name
                     <input type="text" class="modal-input" name="name" required />
                 </label>
+            <svg class="modal-icon" width="12" height="12"> <use href="./images/icons.svg#icon-name"></use> </svg>
+            </div>
+            <div class="input-box">
                    <label class="modal-input-label">
                     Phone
-                     <input type="text" class="modal-input" name="phone" required />
+                     <input type="number" class="modal-input" name="phone" required />
                     </label>
+                    <svg class="modal-icon" width="13" height="13"> <use href="./images/icons.svg#icon-phone"></use> </svg>
+                </div>
+                <div class="input-box">
                     <label class="modal-input-label">
                         Email
-                        <input type="text" class="modal-input" name="email" required />
+                        <input type="email" class="modal-input" name="email" required />
                     </label>
+                    <svg class="modal-icon" width="15" height="12"> <use href="./images/icons.svg#icon-email"></use> </svg>
+                </div>
                     <label class="modal-input-label">
                         Comment
                         <textarea class="modal-textarea" name="textarea" placeholder="Text input" required>
@@ -330,7 +339,11 @@
                     <div class="pp-box">
                     <input type="checkbox" name="privacypolicy" class="privacy-policy-input" id="privacy-policy-input" required />
                     <label for="privacy-policy-input" class="pp-label"> 
-                        I accept the terms and conditions of the <span class="pp-link"> <a href=""> Privacy Policy </a> </span>
+                        <span class="check-mark"> 
+                            <svg class="checkbox" width="16" height="16"> <use href="./images/icons.svg#icon-checkbox"></use></svg> 
+                            <svg class="checkmark" width="10" height="8"> <use href="./images/icons.svg#icon-checkmark"></use></svg>
+                        </span>
+                        I accept the terms and conditions of the <a class="pp-link" href=""> Privacy Policy </a> 
                     </label>
                 </div>
                 <button type="submit" class="send-button"> 

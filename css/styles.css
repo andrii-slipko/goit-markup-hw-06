@@ -472,6 +472,15 @@ margin-bottom: 8px;
     background-color: rgba(46, 47, 66, 0.4);
     top: 0;
     left: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.is-open .backdrop{
+    opacity: 100;
+    visibility: visible;
+    pointer-events: all;
 }
 .modal {
     width: 408px;
@@ -539,6 +548,11 @@ border-radius: 4px;
 border: 1px solid #2E2F4266;
 margin-bottom: 16px;
 }
+.modal-textarea::placeholder {
+
+color: #2E2F4266;
+
+}
 .pp-box {
     display: flex;
     flex-direction: row;
@@ -565,15 +579,6 @@ letter-spacing: 0.04em;
 text-align: left;
 text-decoration: underline;
 }
-.privacy-policy-input {
-    width: 16px;
-height: 16px;
-gap: 0px;
-border-radius: 2px;
-border: 1px solid #2E2F4266;
-margin-right: 8px;
-}
-
 
 .send-button {
  width: Hug (169px)px;
@@ -593,4 +598,37 @@ margin-left: 119px;
 margin-top: 24px;
 margin-right: 120px;
 margin-bottom: 24px;
+}
+
+.check-mark {
+    position: relative;
+}
+.checkbox {
+    fill: none;
+    stroke: #2E2F4266;
+}
+.checkmark {
+    fill: #F4F4FD;
+    position: absolute; 
+    left: 3px;
+    top: 0px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.privacy-policy-input:checked + .checkbox {
+    background-color: #404BBF;
+}
+.privacy-policy-input:checked + .checkmark {
+    opacity: 100;
+    visibility: visible;
+}
+.input-box {
+    position: relative;
+}
+.modal-icon {
+    fill:  #2E2F42;
+position: absolute;
+top: 32px;
+right: 332px;
 }
