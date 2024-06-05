@@ -304,10 +304,41 @@
         <div class="backdrop">
             <div class="modal">
                 <button type="button" class="modal-close">
-                    <svg class="close-x" width="8" height="8">
-                        <use href="./images/icons.svg#clip0_746452_79"></use>
-                     </svg>
+                   <svg class="close-x" width="8" height="8"> <use href="./images/icons.svg#icon-Vector"></use> </svg>
                 </button> 
+                <p class="modal-text">
+                    Leave your contacts and we will call you back
+                </p>
+                <form class="modal-form">
+                    <label class="modal-input-label">
+                        Name
+                    <input type="text" class="modal-input" name="name" required />
+                </label>
+                   <label class="modal-input-label">
+                    Phone
+                     <input type="text" class="modal-input" name="phone" required />
+                    </label>
+                    <label class="modal-input-label">
+                        Email
+                        <input type="text" class="modal-input" name="email" required />
+                    </label>
+                    <label class="modal-input-label">
+                        Comment
+                        <textarea class="modal-textarea" name="textarea" placeholder="Text input" required>
+                        </textarea>
+                    </label>
+                    <div class="pp-box">
+                    <input type="checkbox" name="privacypolicy" class="privacy-policy-input" id="privacy-policy-input" required />
+                    <label for="privacy-policy-input" class="pp-label"> 
+                        I accept the terms and conditions of the <span class="pp-link"> <a href=""> Privacy Policy </a> </span>
+                    </label>
+                </div>
+                <button type="submit" class="send-button"> 
+                    Send
+                </button>
+
+
+                </form>
             </div>
         </div>
     </div>
