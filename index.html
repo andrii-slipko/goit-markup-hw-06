@@ -300,61 +300,81 @@
                 </svg></a> 
             </li>
         </ul>
-    </div>
-        <div class="backdrop is-open">
-            <div class="modal">
-                <button type="button" class="modal-close">
-                   <svg class="close-x" width="8" height="8"> <use href="./images/icons.svg#icon-Vector"></use> </svg>
-                </button> 
-                <p class="modal-text">
-                    Leave your contacts and we will call you back
-                </p>
-                <form class="modal-form">
-                   <div class="input-box">
-                    <label class="modal-input-label">
-                        Name
-                    <input type="text" class="modal-input" name="name" required />
-                </label>
-            <svg class="modal-icon" width="12" height="12"> <use href="./images/icons.svg#icon-name"></use> </svg>
-            </div>
-            <div class="input-box">
-                   <label class="modal-input-label">
-                    Phone
-                     <input type="number" class="modal-input" name="phone" required />
-                    </label>
-                    <svg class="modal-icon" width="13" height="13"> <use href="./images/icons.svg#icon-phone"></use> </svg>
-                </div>
-                <div class="input-box">
-                    <label class="modal-input-label">
-                        Email
-                        <input type="email" class="modal-input" name="email" required />
-                    </label>
-                    <svg class="modal-icon" width="15" height="12"> <use href="./images/icons.svg#icon-email"></use> </svg>
-                </div>
-                    <label class="modal-input-label">
-                        Comment
-                        <textarea class="modal-textarea" name="textarea" placeholder="Text input" required>
-                        </textarea>
-                    </label>
-                    <div class="pp-box">
-                    <input type="checkbox" name="privacypolicy" class="privacy-policy-input" id="privacy-policy-input" required />
-                    <label for="privacy-policy-input" class="pp-label"> 
-                        <span class="check-mark"> 
-                            <svg class="checkbox" width="16" height="16"> <use href="./images/icons.svg#icon-checkbox"></use></svg> 
-                            <svg class="checkmark" width="10" height="8"> <use href="./images/icons.svg#icon-checkmark"></use></svg>
-                        </span>
-                        I accept the terms and conditions of the <a class="pp-link" href=""> Privacy Policy </a> 
-                    </label>
-                </div>
-                <button type="submit" class="send-button"> 
-                    Send
-                </button>
+        <div class="footer-form-box">
+            <p class="footer-form-text"> Subscribe </p> 
+            <form class="footer-form">
+<label class="footer-form-label">
+    <input type="email" name="footer-form-input" placeholder="E-mail" class="footer-form-input">
+</label>
+<button type="submit" class="footer-form-btn">Subscribe
+    <svg class="footer-form-btn-icon" width="24" height="24"> <use href="./images/icons.svg#icon-plane"></use> </svg>
+</button>
 
+            </form>
 
-                </form>
-            </div>
         </div>
     </div>
+       
+    </div>
     </footer>
+    <div class="backdrop is-open">
+        <div class="modal">
+            <button type="button" class="modal-close">
+               <svg class="close-x" width="8" height="8"> <use href="./images/icons.svg#icon-Vector"></use> </svg>
+            </button> 
+            <p class="modal-text">
+                Leave your contacts and we will call you back
+            </p>
+            <form class="modal-form">
+               <div class="input-box">
+                <label class="modal-input-label" name="name-label" for="user-name"> Name </label>
+                    <div class="modal-input-icon-box">
+                <input type="text" class="modal-input" name="user-name" id="user-name" required />
+            
+        <svg class="modal-icon" width="18" height="24."> <use href="./images/icons.svg#icon-name"></use> </svg>
+    </div>
+        </div>
+        <div class="input-box">
+               <label class="modal-input-label" name="tel-label" for="user-tel">
+                Phone </label>
+                <div class="modal-input-icon-box">
+                 <input type="number" class="modal-input" name="user-tel" id="user-tel" required />
+                
+                <svg class="modal-icon" width="18" height="24"> <use href="./images/icons.svg#icon-phone"></use> </svg>
+            </div>
+            </div>
+            <div class="input-box">
+                <label class="modal-input-label" name="email-label" for="user-email">
+                    Email </label>
+                    <div class="modal-input-icon-box">
+                    <input type="email" class="modal-input" name="user-email" id="user-email" required />
+                
+                <svg class="modal-icon" width="15" height="12"> <use href="./images/icons.svg#icon-email"></use> </svg>
+            </div>
+            </div>
+            <div class="textarea-box">
+                <label class="modal-input-label" for="user-comment">
+                    Comment </label>
+                    <textarea class="modal-textarea" name="user-comment" id="user-comment" placeholder="Text input" required>
+                    </textarea>
+                
+            </div>
+                <div class="pp-box">
+                <input type="checkbox" name="user-privacy" class="privacy-policy-input visually-hidden"  id="user-privacy" value="true" required />
+                <label class="pp-label" for="user-privacy"> 
+                    <span class="check-mark">  
+                        <svg class="checkmark" width="10" height="8"> <use href="./images/icons.svg#icon-checkmark"></use></svg>
+                    </span>
+                    I accept the terms and conditions of the <a class="pp-link" href=""> Privacy Policy </a> 
+                </label>
+            </div>
+            <button type="submit" class="send-button"> 
+                Send
+            </button>
+
+
+            </form>
+        </div>
+    </div>
 </body>
 </html>
