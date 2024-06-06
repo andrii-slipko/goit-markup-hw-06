@@ -678,7 +678,7 @@ margin-bottom: 24px;
     top: 0px;
 }
 
-.privacy-policy-input:checked + .check-mark {
+.privacy-policy-input:checked + .pp-label > .check-mark {
     background-color: #404bbf;
     border: none;
     fill:#F4F4FD;
