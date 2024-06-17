@@ -19,6 +19,8 @@ p {
 }
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 .header {
     background-color: #FFFFFF;
@@ -30,7 +32,7 @@ img {
 .container {
     max-width: 320px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
 }
 .header-container {
     display: flex;
@@ -188,7 +190,7 @@ border: none;
 border-radius: 4px;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 margin-top: 0;
-margin-bottom: 72px;
+
 }
 .main-button:hover {
     background-color:  #404BBF;
@@ -197,7 +199,7 @@ margin-bottom: 72px;
     background-color: #404BBF;
 }
 .adv-section {
-    padding: 120px 0;
+    padding: 96px 0;
     min-width: 320px;
 }
 .visually-hidden {
@@ -226,7 +228,7 @@ text-align: center;
 .advantages-list {
     display: flex;
     flex-direction: column;
-    
+    gap: 72px;
 
 }
 .advantages-list-item {
@@ -259,14 +261,13 @@ display: none;
 }
 .team-box {
     background-color: #F4F4FD;
-    padding: 120px 0;
-    min-width: 320px;
+    padding: 96px 0;
 width: 100%;
 }
 .team-list {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 72px;
 justify-content: center;
 }
 .team-title {
@@ -285,13 +286,14 @@ margin-bottom: 72px;
     
     border-radius: 0px 0px 4px 4px;
     box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    margin-bottom: 72px;
+    
     width: 264px;
     
 }
-.tli-4 {
-    margin-bottom: 0;
+.team-box-cont {
+    width: 296px;
 }
+
 .team-list-item-cont {
     padding: 32px 0;
 }
@@ -313,10 +315,11 @@ letter-spacing: 0.02em;
 text-align: center;
 color: #434455;
 background-color: #FFFFFF;
+margin-bottom: 8px;
 }
 .portfolio {
-    padding-top: 120px; padding-bottom: 120px;
-    min-width: 320px;
+    padding-top: 96px; padding-bottom: 96px;
+    
 }
 
 .portfolio-title {
@@ -395,15 +398,7 @@ color: #434455;
 }
 .footer-box {
     background-color: #2E2F42;
-    padding: 100px 0;
-    
-    padding-left: 16px;
-    padding-right: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+    padding: 96px 0; 
 }
 .footer-text {
 font-size: 16px;
@@ -455,7 +450,7 @@ text-align: center;
 color: #FFFFFF;
 margin-bottom: 16px;
 
-margin-left: 56px;
+
 }
 .sm-icon {
 
@@ -477,8 +472,9 @@ margin-left: 56px;
 .footer-sm-box {
     display: flex;
     flex-direction: column;
- justify-content: center;
+ align-items: center;
  margin-bottom: 72px;
+ 
 }
 .sm-icon-footer {
     width: 40px;
@@ -507,7 +503,7 @@ margin-left: 56px;
 }
 .footer-cont {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     flex-direction: column;
 
 }
@@ -535,9 +531,8 @@ margin-left: 56px;
     display: flex;
     flex-direction: row;
     gap: 16px;
-    justify-content: space-around;
+    
     align-items: center;
-    margin-left: 40px;
 }
 .backdrop {
     width: 100%;
@@ -836,11 +831,13 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     top: 0;
     left: 0;   
-    padding-top: 72px;
-    padding-left: 16px;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    padding: 72px 16px 40px 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .menu.is-open {
     opacity: 1;
@@ -868,6 +865,7 @@ padding: 0;
     flex-direction: column;
     margin-bottom: auto;
     gap: 40px;
+    margin-bottom: auto;
 }
 .menu-nav-link {
     font-size: 36px;
@@ -900,7 +898,7 @@ padding: 0;
 .nav-adr-menu {
     display: flex;
     flex-direction: column;
-    gap: 26vh;
+    justify-content: space-between;
 }
 .menu-contacts-link {
 font-size: 16px;
@@ -1008,11 +1006,13 @@ letter-spacing: 0.04em;
         padding-top: 112px;
         padding-bottom: 112px;
     }
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .hero {
-            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bckr-tab-2x.jpg);
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/her-bckr-tab-2x.jpg);
+            background-size: cover;
         }
     }
+    
     .main-title {
         font-size: 56px;
         font-weight: 700;
@@ -1024,30 +1024,38 @@ height: 120px;
         
 
     }
+    .adv-section {
+        padding: 96px 0;
+    }
     .advantages-list {
         flex-direction: row;
         flex-wrap: wrap;
-gap: 24px;
+column-gap: 24px;
+row-gap: 72px;
 justify-content: center;
     }
+   
     .advantages-title-name {
         text-align: left;
     }
     .adv-list-item {
-        width: calc((100% - 56px) / 2);
+        width: calc((100% - 24px) / 2);
+        margin-bottom: 0;
     }
     
     .team-list {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 64px;
     }
     .team-list-item {
         width: 264px;
     }
-    .tli-4 {
-        margin-bottom: 72px;
+    .team-box-cont {
+        width: 768px;
     }
+   
     
     .portfolio-list {
         flex-direction: row;
@@ -1079,7 +1087,7 @@ justify-content: center;
     
     .footer-text {
         width: 264px;
-        margin-bottom: 72px;
+        
         
     }
     .sm-list-footer {
@@ -1087,9 +1095,11 @@ justify-content: center;
     }
    .logo-footer-box {
     align-items: start;
+    margin-bottom: 0;
    }
    .footer-sm-box {
     align-items: start;
+    margin-bottom: 0;
    }
     .footer-form {
         flex-direction: row;
@@ -1156,13 +1166,13 @@ justify-content: center;
         margin-bottom: 0;
     }
     .hero {
-      
+      padding: 188px 0;
         max-width: 99999px;
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bckr-des.jpg);
     }
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .hero {
-            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bckr-des-2x.jpg);
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/her0-bckr-des-2x.jpg);
         }
     }
     
@@ -1178,7 +1188,7 @@ height: 120px;
     }
     .adv-section {
       
-        padding-left: 0;
+        padding: 120px 0;
     }
     .advantages-list {
         flex-direction: row;
@@ -1206,7 +1216,7 @@ text-align: left;
         width: 264px;
     }
     .atd-4 {
-        margin-bottom: 72px;
+        margin-bottom: 0;
     }
     .adv-box {
         display: flex;
@@ -1224,6 +1234,7 @@ text-align: left;
         max-width: 99999px;
         
         background-color: #F4F4FD;
+        padding: 120px 0;
     }
     .team-list {
         flex-direction: row;
@@ -1233,14 +1244,21 @@ text-align: left;
     .team-list-item {
         width: calc((100% - 72) / 4);
     }
-    .tli-4 {
-        margin-bottom: 72px;
+    .team-list-item-cont {
+        min-width: 232px;
     }
-   
+    .tli-4 {
+        margin-bottom: 0;
+    }
+   .portfolio {
+    padding: 120px 0;
+   }
     .portfolio-list {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 40px;
+
         align-items: center;
     }
     .portfolio-list-item {
@@ -1248,7 +1266,8 @@ text-align: left;
         max-width: 360px;
     }
     .footer-box {
-        min-width: 1158px;
+        
+padding: 100px 0;
         max-width: 99999px;
     }
     .footer-cont {
@@ -1257,6 +1276,8 @@ text-align: left;
         align-items: baseline;
         justify-content: center;
     width: 1158px;
+    gap: 0;
+    row-gap: 0;
     }
     .footer-text {
         width: 264px;
